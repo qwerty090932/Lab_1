@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include <math.h>
+#include <cmath>
 using namespace std;
 void exersice1() {
 	setlocale(LC_ALL, "rus");
