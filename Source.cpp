@@ -1,4 +1,4 @@
-// Сампилов Мунко. 4 подгруппа. 8 Вариант
+
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -19,7 +19,6 @@ void exersice1() {
 		mb = 0.5 * sqr2;
 		mc = 0.5 * sqr3;
 	}
-	cout << "Медианы трегольников равны " << endl;
 	cout << ma << endl << mb << endl << mc;
 }
 void calculateDouble(double x) {
@@ -32,30 +31,30 @@ void calculateDouble(double x) {
 			denom3 = pow(x, 2) - y / denom2;
 		}
 		else {
-			cout << "Деление на ноль!" << endl;
+			cout << "Error!" << endl;
 			exit(0);
 		}
 		if (denom3 != 0) {
 			z = (8.7 * x * sqrt(abs(y - x))) / denom3;
 		}
 		else {
-			cout << "Деление на ноль!" << endl;
+			cout << "Error!" << endl;
 			exit(0);
 		}
 		cout << z << endl;
 	}
-	else cout << "Деление на ноль!";
+	else cout << "Error!";
 }
 int main() {
 	float x, y, z;
 	setlocale(LC_ALL, "rus");
 	do {
 		if (cin.fail()) {
-			cout << "Введено не число!";
+			cout << "Error!";
 			cin.clear();
 			cin.ignore(32767,'\n');
 		}
-		cout << "Введите число: " << endl;
+		cout << "Value: " << endl;
 		cin >> x;
 	} while (cin.fail());
 
@@ -68,19 +67,19 @@ int main() {
 			denom3 = pow(x, 2) - y / denom2;
 		}
 		else {
-			cout << "Деление на ноль!" << endl;
+			cout << "Error!" << endl;
 			exit(0);
 		}
 		if (denom3 != 0) {
 			z = (8.7 * x * sqrt(abs(y - x))) / denom3;
 		}
 		else {
-			cout << "Деление на ноль!" << endl;
+			cout << "Error" << endl;
 			exit(0);
 		}
 		cout << z <<endl;
 	}
-	else cout << "Деление на ноль!";
+	else cout << "Error!";
 	calculateDouble(x);
 	//exersice1();
 	return 0;
